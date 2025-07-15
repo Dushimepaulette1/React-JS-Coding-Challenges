@@ -1,5 +1,6 @@
 import UserClicks from "./components/Button";
 import ListRendering from "./components/ListRendering";
+import { Form } from "./components/Forms";
 import React from "react";
 
 export default function App() {
@@ -18,8 +19,9 @@ export default function App() {
         Button 1
       </UserClicks>
       <UserClicks OnClick={() => handleClick("Button 2")}> Button 2</UserClicks>
-      <UserClicks OnClick={() => handleClick("Button 3")}> Button 3</UserClicks>
+      <UserClicks OnClick={() => handleClick("Button 3")}>Button 3</UserClicks>
       <ListRendering items={array} />
+      <Form />
     </>
   );
 }
